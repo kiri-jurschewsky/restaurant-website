@@ -36,17 +36,45 @@ header {
 }
 
 
-.logo-img {
-  width: 200px;
-  position: absolute;
-  margin-bottom: 2em;
+h1 {
+  font-size: 2rem;
+  font-family: "Merriweather";
+  text-align: center;
+  margin: 0;
 }
 
-.logo-text {
-  position: relative;
-bottom: 50;
+.nav {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+ul {
+  overflow: hidden;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  background-color: #666;
+}
+
+li {
+  font-size: 1.125rem;
+  text-decoration: none;
+  float: left;
+  width: 33.3%;
+  padding: .5em;
+  text-align: center;
+}
+
+a {
+  float: left;
+  float: right;
 }
 
 .banner-img {
-
+  width: 100%
 }
