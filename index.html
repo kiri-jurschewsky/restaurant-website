@@ -1,109 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Market Place</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-  </head>
-  <body>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Market Place</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet"
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
 
     <header>
+      <h1>Market Place</h1>
 
-        <div class="logo-text">
-          <h1>Market Place</h1>
+      <nav>
+        <input type="checkbox" class="nav-check" id="nav-check">
+        <label class="nav-label" for="nav-check">
+          <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
+          <img class="nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
+        </label>
+
+        <ul class="nav">
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#order-options">Order Options</a></li>
+          <li><a href="#our-restaurants">Our Restaurants</a></li>
+        </ul>
+      </nav>
+
+    <div class="banner">
+      <img class="banner-img" src="images/placeholder-16by9.svg" alt="">
+      <div class="banner-content">
+        <h2><span class="banner-text">Fealing stressed out...?</span></h2>
+        <p>Our muffins can make it BETTER!</p>
+        <div class="button">
+          <a class="btn" href="#our-restaurants">Our restaurants</a>
         </div>
-
-      <div class="nav">
-        <nav>
-          <ul>
-            <li><a href="#"></a>Menu</li>
-            <li><a href="#"></a>Location</li>
-            <li><a href="#"></a>About Us</li>
-          </ul>
-        </nav>
       </div>
+    </div>
 
-      <div class="banner">
-        <img class="banner-img" src="images/placeholder-golden.svg" alt="">
-        <div>
-        <div class="banner-text">
-          <h2>Fealing stressed out...?</h2>
-          <p class="">Our muffins can make it BETTER!</p>
-          <p class=""><small>The best muffins on camput!</small></p>
-      </div>
-
-        <div class="btn">
-          <a href="#">Menu</a>
-        </div>
-       </div>
-      </div>
     </header>
 
-    <main>
-      <div class="cards">
-        <div>
-          <img class="card-img" src="images/placeholder-1by1.svg" alt="">
+    <section class="cards">
+      <div class="card-1">
+        <a href="#about-us"><img src="images/placeholder-16by9.svg" alt=""></a>
+        <div class="card-content-1">
+          <p>About Us</p>
         </div>
-        <a href="#">Menu</a>
       </div>
 
-      <div class="cards">
-        <div class="card-img">
-          <img src="images/placeholder-1by1.svg" alt="">
+      <div class="card-2">
+        <a href="#order-options"><img src="images/placeholder-16by9.svg" alt=""></a>
+        <div class="card-content-1">
+          <p>Order options</p>
         </div>
-        <a href="#">Location</a>
       </div>
 
-      <div class="cards">
-        <div class="card-img">
-          <img src="images/placeholder-1by1.svg" alt="">
+      <div class="card-3">
+        <a href="#our-restaurants"><img src="images/placeholder-16by9.svg" alt=""></a>
+        <div class="card-content-1">
+          <p>Our restaurants</p>
         </div>
-        <a href="#">About Us</a>
       </div>
 
-      <section class="menu">
-        <h2>Menu</h2>
-        <p><small>sub text</small></p>
-        <div class="menu-text">
-          <p>menu tex</p>
-          <p>menu tex</p>
-          <p>menu tex</p>
-        </div>
-      </section>
+    </section>
 
-      <section class="location">
-        <h2>Location</h2>
-        <p><small>sub text</small></p>
-        <div class="location-text">
-          <p>menu tex</p>
-        </div>
-      </section>
+    <section class="about-us">
+      <h2 id="about-us">About Us</h2>
+      <img src="images/placeholder-3by2.svg" alt="">
+      <p>text</p>
+    </section>
 
-      <section class="about us">
-        <h2>About Us</h2>
-        <p><small>sub text</small></p>
-        <div class="about-us-text">
-          <p>menu tex</p>
-        </div>
-      </section>
+    <section class="order-options">
+      <h2 id="order-options">Order Options</h2>
+      <img src="images/placeholder-3by2.svg" alt="">
+      <p>text</p>
+      <p>text</p>
+    </section>
 
-      <footer>
-        <h3>Contact Us</h3>
+    <section class="restaurant">
+      <h2 id="restaurant">Our Restaurants</h2>
+
+      <div class="breakfast">
+        <img src="images/placeholder-circle.svg" alt="">
+        <p>Breakfast</p>
         <p>text</p>
-        <div class="circle">
-          <img src="images/placeholder-circle.svg" alt="">
-          <p>Facebook</p>
-          <img src="images/placeholder-circle.svg" alt="">
-          <p>Twitter</p>
-          <img src="images/placeholder-circle.svg" alt="">
-          <p>Istagram</p>
-        </div>
-      </footer>
+      </div>
 
+      <div class="lunch">
+        <img src="images/placeholder-circle.svg" alt="">
+        <p>Lunch</p>
+        <p>text</p>
+      </div>
 
-    </main>
+      <div class="dessert">
+        <img src="images/placeholder-circle.svg" alt="">
+        <p>Dessert</p>
+        <p>text</p>
+      </div>
 
-  </body>
+    </section>
+
+    <footer>
+      <div class="hours">
+        <h3 id="hours">Hours</h3>
+        <p>Monday-Friday: 8:30am-6:30pm</p>
+      </div>
+
+      <div class="map">
+        <h3>Address:</h3>
+        <p>1385 Woodroffe Avenue Ottawa, Ontario K2G 1V8</p>
+      </div>
+
+      <div class="social-media">
+        <a href=""><img src="images/placeholder-circle.svg" alt="Facebook"></a>
+        <a href=""><img src="images/placeholder-circle.svg" alt="Twitter"></a>
+        <a href=""><img src="images/placeholder-circle.svg" alt="Instagram"></a>
+      </div>
+
+      <div class="disclaimer">
+        <small>Phone number: 613-000-000</small>
+<small>Copyright© 2016  Market Place.
+All reserved</small>
+      </div>
+    </footer>
+
+  </main>
+</body>
 </html>

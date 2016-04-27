@@ -5,11 +5,11 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  box-sizing: border-box;
   font: normal 100%/1.3, sans-serif;
 }
 
@@ -17,64 +17,434 @@ html {
   box-sizing: inherit;
 }
 
-html {
-  background-color: #ccc;
-  font-family: "Merriweather", serif;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
+  padding: 0;
+  font-family: , serif;
 }
+
 
 header {
   background-color: #999;
-  color: #fff;
-  margin: 0;
-  padding: 0:
+  color: #000;
+  text-align: left;
+  position: relative;
+}
+
+header h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  font-family: , sans-serif;
+}
+
+header img {
+  display: none;
 }
 
 
-h1 {
-  font-size: 2rem;
-  font-family: "Merriweather";
-  text-align: center;
-  margin: 0;
+.about-us p {
+  padding: 0 1em;
 }
 
 .nav {
+  list-style-type: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav a {
+  color: #000;
+  font-family: , sans-serif;
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  text-align: center;
+  font-family: , sans-serif;
+}
+
+nav ul {
+  background-color: #999;
+  font-size: 0.5rem;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  color: #fff;
+
+}
+
+nav li {
+  text-align: left;
   font-size: 1.125rem;
 }
 
-ul {
-  overflow: hidden;
-  text-decoration: none;
-  list-style-type: none;
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-label {
+  right: 0;
+  top: 0;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: #ccc;
   padding: 0;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
-  background-color: #666;
 }
 
-li {
-  font-size: 1.125rem;
-  text-decoration: none;
-  float: left;
-  width: 33.3%;
-  padding: .5em;
-  text-align: center;
+.nav-close {
+  display: none;
 }
 
-a {
-  float: left;
-  float: right;
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
 }
 
 .banner-img {
-  width: 100%
+  display: block;
+  width: 100%;
+}
+
+.banner img {
+  height: 50%;
+}
+
+.banner {
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: absolute;
+  float: right;
+  right: 10%;
+  top: 10%;
+  left: 10%;
+  transform: translate(0);
+}
+
+.banner h2 {
+  font-family: , sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner p {
+  font-size: 1rem;
+  margin-right: 1em;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  font-family: , sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.4em 0.75em 0.3em;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.small {
+  font-size: 0.5rem;
+}
+
+.banner a:link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.4em 0.25em 0.6em;
+}
+
+section.cards {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+  font-family: , sans-serif;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 4,5%;
+  right: 4.5%;
+  z-index: 4000;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  position: relative;
+  margin: 0;
+}
+
+section {
+  display: inline-block;
+}
+
+.about-us img,
+.order-options img,
+.our-restaurants img {
+  width: 100%;
+}
+
+
+.breakfast,
+.lunch,
+.dessert {
+  text-align: center;
+  padding: 1em 0;
+}
+
+h2,
+h3 {
+  font-size: 200%;
+  font-family: , sans-serif;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+
+.our-restaurants h3,
+.our-restaurants p {
+  padding: 0;
+}
+
+.date {
+  background-color: #666;
+  color: #fff;
+  margin-right: 3em;
+}
+
+.disclaimer {
+  display: inline;
+  text-align: center;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media img {
+  width: 80px;
+  padding: 1em;
+}
+
+footer {
+  background-color: #999;
+  color: #fff;
+  overflow: hidden;
+}
+
+footer p {
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  .banner-content {
+    width: 70%;
+    top: 10%;
+  }
+
+  .banner h2 {
+    font-size: 200%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-open {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-close {
+    display: none;
+  }
+
+  header h1 {
+    float: left;
+  }
+
+  .banner {
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .banner h2 {
+    font-size: 250%;
+  }
+
+  .banner-content {
+    width: 65%;
+    top: 15%;
+  }
+
+  ul.nav {
+    float: right;
+  }
+
+  .nav li {
+    padding: 1em 0;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 33.333%;
+    float: left;
+  }
+
+  .about-us img {
+    float: left;
+    width: 50%;
+    padding: 0 1em 1em 0;
+  }
+
+
+  .breakfast,
+  .lunch,
+  .dessert {
+    float: left;
+    width: 50%;
+    padding: 1em;
+    overflow: hidden;
+  }
+
+  .disclaimer {
+    text-align: right;
+    width: 60%;
+    float: right;
+  }
+
+  .hours {
+    float: left;
+    width: 50%;
+    padding: 0 1em 0 0;
+  }
+
+
+  .social-media {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+
+  .social-media img {
+    width: 80px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-open {
+    display: none;
+  }
+
+  .nav-check:checked ~ .nav-label .nav-close {
+    display: none;
+  }
+
+  .banner h2 {
+    font-size: 300%;
+  }
+
+  .banner-content {
+    width: 60%;
+    top: 25%;
+  }
+
+  .breakfast,
+  .lunch,
+  .dessert {
+    overflow: hidden;
+    width: 25%;
+    padding: 1em;
+    float: left;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
+  .banner-content {
+    width: 50%;
+    top: 25%;
+  }
+
+  .banner h2 {
+    font-size: 300%;
+  }
+
 }
