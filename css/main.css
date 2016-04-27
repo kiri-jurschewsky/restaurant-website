@@ -45,7 +45,7 @@ header img {
 
 
 .about-us p {
-  padding: 0 1em;
+  padding: 0;
 }
 
 .nav {
@@ -95,7 +95,6 @@ nav a:hover {
 
 .nav-check {
   position: absolute;
-  top: -3em;
 }
 
 .nav-open,
