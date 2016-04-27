@@ -138,10 +138,10 @@ nav a:hover {
 
 .banner-content {
   position: absolute;
-  float: right;
-  right: 50%;
-  top: 50%;
-  left: 50%;
+  float: left;;
+  right: 40%;
+  top: 60%;
+  left: 30%;
   transform: translate(0);
 }
 
@@ -175,8 +175,12 @@ nav a:hover {
   color: #fff;
 }
 
-.small {
-  font-size: 0.5rem;
+
+.card-1,
+.card-2,
+.card-3 {
+  position: relative;
+  margin: 0;
 }
 
 .banner a:link {
@@ -260,6 +264,10 @@ h3 {
 .social-media img {
   width: 80px;
   padding: 1em;
+}
+
+.small {
+  font-size: 0.5rem;
 }
 
 footer {
