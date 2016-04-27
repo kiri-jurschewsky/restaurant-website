@@ -95,6 +95,7 @@ nav a:hover {
 
 .nav-check {
   position: absolute;
+  top: -5em;
 }
 
 .nav-open,
