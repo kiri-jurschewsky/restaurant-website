@@ -57,18 +57,12 @@ header h1 {
   text-align: right;
 }
 
-.order-now{
-  float: right;;
+figure {
+  float: right;
   width: 100%;
   float: right;
   margin-right: -15%;
   width: 300px;
-}
-
-figure{
-  float: right;
-  width: 300px;
-
 }
 
 nav ul {
@@ -322,7 +316,7 @@ footer p {
   .banner {
     display: inline-block;
     overflow: hidden;
-    max-width: 100%
+    max-width: 100%;
   }
 
   .banner h2 {
